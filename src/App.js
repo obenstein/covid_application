@@ -90,15 +90,11 @@ const onCountryChange= async (event) => {
         onChange={onCountryChange}>
         <MenuItem value="worldwide">WorldWide</MenuItem>
           {
-              //For every country, return a menu item
+              
               countries.map((country)=> ( 
                 <MenuItem value={country.value}>{country.name}</MenuItem>
               ))
       }
-          
-          {/* 
-          <MenuItem value="worldwide">w3</MenuItem>
-          <MenuItem value="worldwide">w4</MenuItem> */}
         </Select>
       </FormControl>
       </div>
